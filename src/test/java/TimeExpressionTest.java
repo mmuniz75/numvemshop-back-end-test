@@ -178,7 +178,7 @@ public class TimeExpressionTest extends TestCase {
         assertTrue(everyMonthTheLastFridayFromJanuary2012ToMay2012.isRecurringOn(firstFridayOfJanuary2012.plusWeeks(16))); // fourth friday of april
     }
 
-    /*
+   
     public void testRecursEveryAugustTheEight() {
         int oneYear = 1; // you can change the Int type by the one you make up
         MonthDay augustTheEight = MonthDay.of(8, 8);
@@ -196,5 +196,5 @@ public class TimeExpressionTest extends TestCase {
         assertTrue(everyAugustTheEightFrom2012To2015.isRecurringOn(firstEightOfAugust.plusYears(2)));
         assertTrue(everyAugustTheEightFrom2012To2015.isRecurringOn(firstEightOfAugust.plusYears(3)));
     }
-    */
+   
 }

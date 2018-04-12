@@ -86,7 +86,8 @@ public class TimeExpression {
     }
 
     public static TimeExpression yearlyEveryOnFromOnwards(int anAmountOfYears, MonthDay aMonthDay, int anYear) {
-        throw new RuntimeException("Must implement method: yearlyEveryOnFromOnwards");
+    	LocalDate aDate = LocalDate.of(anYear, aMonthDay.getMonthValue(), aMonthDay.getDayOfMonth()); 
+    	return new TimeExpression(aDate,anAmountOfYears,ChronoUnit.YEARS);
     }
 
     public boolean isRecurringOn(LocalDate aDate) {
